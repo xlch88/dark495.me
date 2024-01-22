@@ -4,7 +4,7 @@
 https://dark495.me/
 
 ## good.php
-参数使用实例：
+参数使用示例：
 
 https://dark495.me/good.php?w=%E5%96%B5&bc=b7e2fb&brc=fff&wc=fff&bc=b7e2fb&wbc=linear-gradient(135deg,rgb(255,169,187),rgb(148,179,233))
 
