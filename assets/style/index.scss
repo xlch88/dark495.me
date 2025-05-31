@@ -1,0 +1,170 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "MingLiU", "Noto Serif SC", "SimSun", "Microsoft JhengHei", serif;
+	min-height: 100dvh;
+	margin: 0;
+	overflow-y: overlay;
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: nowrap;
+	padding: 0 15px;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+main {
+	width: 100%;
+	max-width: 1000px;
+}
+
+section#content {
+	font-size: 32px;
+	min-height: 70dvh;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1em;
+
+	p {
+		width: 100%;
+		line-height: 46px;
+	}
+
+	.logo {
+		width: 100%;
+		#logo {
+			display: inline-flex;
+			text-align: left;
+			font-weight: bold;
+			line-height: 45px;
+			border: 1px solid #000;
+			overflow: hidden;
+			border-radius: 5px;
+			align-items: flex-end;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: center;
+
+			span:nth-child(1) {
+				background: #000;
+				color: #fff;
+				padding: 0 5px;
+			}
+
+			span:nth-child(2) {
+				padding: 0 2px;
+			}
+
+			span:nth-child(3) {
+				font-size: 20px;
+				padding-right: 3px;
+			}
+		}
+	}
+
+	.control {
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		color: #000;
+
+		a {
+			opacity: 0.3;
+			line-height: 32px;
+			cursor: pointer;
+			transition: opacity 0.3s;
+
+			&:hover {
+				opacity: 1;
+			}
+
+			svg {
+				width: 32px;
+				height: 32px;
+			}
+		}
+	}
+}
+
+.hr {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #888;
+	margin: 20px 0 !important;
+
+	&::before,
+	&::after {
+		content: "";
+		flex: 1;
+		height: 1px;
+		background: #ccc;
+	}
+
+	&::before {
+		margin-right: 1em;
+	}
+
+	&::after {
+		margin-left: 1em;
+	}
+}
+
+.col-2 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+	gap: 50px;
+	margin-top: 80px;
+	margin-bottom: 5em;
+
+	@media (max-width: 1000px) {
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	> * {
+		width: 100%;
+	}
+}
+
+section#links {
+	position: relative;
+	text-align: center;
+
+	> * {
+		margin: 20px;
+	}
+
+	svg {
+		width: 32px;
+	}
+}
+
+section#domains {
+	.group {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+		margin-bottom: 36px;
+		p {
+			font-weight: bolder;
+			width: 100%;
+			margin-bottom: 0;
+			margin-top: 0;
+		}
+	}
+}
