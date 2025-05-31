@@ -361,7 +361,7 @@ if(strpos($word, "\n") !== FALSE){
 				flex-direction: row;
 				flex-wrap: nowrap;
 				justify-content: center;
-                margin-top: 1em;
+				margin-top: 1em;
 			}
 
 			#logo span:nth-child(1) {
