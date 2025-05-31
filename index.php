@@ -400,7 +400,7 @@ if(strpos($word, "\n") !== FALSE){
 			const index = '<?=$index; ?>';
 			
 			if(index !== new URL(location.href).searchParams.get('index')){
-				history.pushState(null, `/?index=${index}`)
+				history.replaceState(null, '', `/?index=${index}`);
 			}
 		</script>
 	</body>
