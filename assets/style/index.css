@@ -151,3 +151,10 @@ section#domains .group p {
   margin-bottom: 0;
   margin-top: 0;
 }
+section#domains .group a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+section#domains .group .other {
+  cursor: not-allowed;
+}

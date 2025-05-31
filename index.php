@@ -259,25 +259,25 @@ $words = [
 	
 ];
 $domains = [
-	'cnmb.me'				=> 'available',
 	'dark495.com'			=> 'available',
 	'dark495.me'			=> 'available',
-	'darkserver.party'		=> 'available',
 	'fuckgod.me'			=> 'available',
-	'herobrine.cn'			=> 'available',
+	'cnmb.me'				=> 'available',
 	'moecdn.cn'				=> 'available',
 	'moeeye.cn'				=> 'available',
-	'xlch.cc'				=> 'available',
-	'xlch.me'				=> 'available',
 	'qwq.pink'				=> 'available',
+	'darkserver.party'		=> 'available',
+	'healtheworld.pink'		=> 'available',
+	'lovetheworld.net'		=> 'available',
 	
 	'adminphp.net'			=> 'waiting',
-	'healtheworld.pink'		=> 'waiting',
-	'lovetheworld.net'		=> 'waiting',
 	'syzx.me'				=> 'waiting',
 	'xjp.red'				=> 'waiting',
 	'yttweak.com'			=> 'waiting',
 	
+	'xlch.cc'				=> 'unavailable',
+	'xlch.me'				=> 'unavailable',
+	'herobrine.cn'			=> 'unavailable',
 	'badapple.top'			=> 'unavailable',
 	'flandre-studio.cn'		=> 'unavailable',
 	'moeadmin.cn'			=> 'unavailable',
@@ -367,8 +367,16 @@ if(strpos($word, "\n") !== FALSE){
 									'darkserver.party'      => 'https://darkserver.party:4433',
 									'qwq.pink'              => 'https://s.qwq.pink',
 									
+									'0w0watchingyou.win'    => false,
+									'uwumonitor.win'        => false,
+									
 									'8.8.e.0.4.8.0.6.0.4.2.ip6.arpa'    => 'http://uwu.8.8.e.0.4.8.0.6.0.4.2.ip6.arpa',
 								][$domain] ?? 'https://' . $domain . '/';
+								
+								if($group === 'unavailable' || !$href){
+									echo '<span class="other">' . $domain . '</span>';
+									continue;
+								}
 							?>
 								<a href="<?=$href; ?>" target="_blank"><?=$domain; ?></a>
 							<?php } ?>
