@@ -318,7 +318,7 @@ if(strpos($word, "\n") !== FALSE){
 		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
 		<title>Dark495.me</title>
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200&display=swap" rel="stylesheet" />
-		<link href="/assets/style/index.css?v=1" rel="stylesheet" />
+		<link href="/assets/style/index.css?v=2" rel="stylesheet" />
 	</head>
 	<body>
 		<main>
