@@ -250,7 +250,7 @@ if(strpos($word, "\n") !== FALSE){
 
 			body {
 				font-family: "MingLiU", "Noto Serif SC", "SimSun", "Microsoft JhengHei", serif;
-				min-height: 90vh;
+				min-height: 100dvh;
 				margin: 0;
 				padding: 15px;
 				overflow-y: overlay;
