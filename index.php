@@ -402,20 +402,6 @@ if(strpos($word, "\n") !== FALSE){
 			if(index !== new URL(location.href).searchParams.get('index')){
 				history.pushState(null, `/?index=${index}`)
 			}
-			
-			function getChars(dom){
-				let text = dom.innerText;
-				let chars = {};
-				for(let i = 0; i < text.length; i++){
-					chars[text[i]] = 1;
-				}
-				return Object.keys(chars).sort().join('').replace(/\s/g, '');
-			}
-			
-			let link = document.createElement('link');
-			link.rel = "stylesheet";
-			link.href = 'https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200&display=swap&text=联系我' + encodeURI(getChars(document.body));
-			//document.head.appendChild(link);
 		</script>
 	</body>
 </html>
