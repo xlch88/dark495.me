@@ -469,6 +469,6 @@ function timeago($ptime){
 				history.replaceState(null, '', `/?index=${index}`);
 			}
 		</script>
-		<script src="/assets/js/shader.js"></script>
+		<script src="/assets/js/shader.js?v=2"></script>
 	</body>
 </html>

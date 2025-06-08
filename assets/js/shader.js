@@ -18,8 +18,8 @@ uniform sampler2D iChannel0;
 
 out vec4 fragColor;
 
-#define HSAMPLES 64
-#define MSAMPLES 16
+#define HSAMPLES ${window.innerWidth < 700 ? 16 : 64}
+#define MSAMPLES ${window.innerWidth < 700 ? 8 : 16}
 #define SPEED 1.0
 
 void main() {
