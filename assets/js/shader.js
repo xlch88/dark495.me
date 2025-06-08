@@ -94,7 +94,14 @@ void main() {
 
 	const gl = canvas.getContext("webgl2");
 	if (!gl) {
-		alert("你的浏览器不支持WebGL。");
+		alert(`哇，好神奇，你的浏览器竟然不支持WebGL 2。
+
+这到底是怎么做到的呢？？？
+
+聪明的你，告诉我，这是什么神仙浏览器：
+
+${navigator.userAgent}`);
+
 		console.error("WebGL2 is not supported by your browser.");
 		return;
 	}
