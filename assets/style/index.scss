@@ -207,6 +207,13 @@ section#github {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+
+			@media (max-width: 550px) {
+				align-items: flex-start;
+				flex-direction: column;
+				gap: 5px;
+			}
+
 			a {
 				font-weight: bolder;
 				background: #ffffff;

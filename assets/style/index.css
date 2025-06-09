@@ -186,6 +186,13 @@ section#github .item .title {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 550px) {
+  section#github .item .title {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
 section#github .item .title a {
   font-weight: bolder;
   background: #ffffff;
