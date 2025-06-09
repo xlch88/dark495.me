@@ -127,7 +127,7 @@ section#content {
 	&::after {
 		content: "";
 		flex: 1;
-		height: 1px;
+		height: 2px;
 		background: #ccc;
 	}
 
@@ -206,8 +206,14 @@ section#github {
 		.title {
 			display: flex;
 			justify-content: space-between;
+			align-items: center;
 			a {
 				font-weight: bolder;
+				background: #ffffff;
+				color: black;
+				padding: 5px 10px;
+				border-radius: 500px;
+				font-size: 14px;
 			}
 			.info {
 				display: flex;
@@ -220,6 +226,8 @@ section#github {
 		}
 		.desc {
 			margin: 10px 0 0;
+			background: #7c7c7c;
+			padding: 5px;
 		}
 	}
 }

@@ -117,7 +117,7 @@ section#content .control a svg {
 .hr::before, .hr::after {
   content: "";
   flex: 1;
-  height: 1px;
+  height: 2px;
   background: #ccc;
 }
 .hr::before {
@@ -184,9 +184,15 @@ section#github .item {
 section#github .item .title {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 section#github .item .title a {
   font-weight: bolder;
+  background: #ffffff;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 500px;
+  font-size: 14px;
 }
 section#github .item .title .info {
   display: flex;
@@ -198,4 +204,6 @@ section#github .item .title .info .license {
 }
 section#github .item .desc {
   margin: 10px 0 0;
+  background: #7c7c7c;
+  padding: 5px;
 }
