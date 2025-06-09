@@ -1,4 +1,5 @@
 <?php
+$latestCommitId = is_file('.latestCommitId') ? trim(file_get_contents('.latestCommitId')) : time();
 if(
 	!is_file('github.json') ||
 	!($githubRepos = json_decode(file_get_contents('github.json'), true)) ||
@@ -369,7 +370,7 @@ function timeago($ptime){
 		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
 		<title>Dark495.me</title>
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200&display=swap" rel="stylesheet" />
-		<link href="/assets/style/index.css?v=4" rel="stylesheet" />
+		<link href="/assets/style/index.css?v=<?=$latestCommitId; ?>" rel="stylesheet" />
 	</head>
 	<body>
 		<main>
@@ -469,6 +470,6 @@ function timeago($ptime){
 				history.replaceState(null, '', `/?index=${index}`);
 			}
 		</script>
-		<script src="/assets/js/shader.js?v=2"></script>
+		<script src="/assets/js/shader.js?v=<?=$latestCommitId; ?>"></script>
 	</body>
 </html>
