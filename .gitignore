@@ -19,6 +19,7 @@ dist-ssr
 *.local
 dist*.zip
 github.json
+.ghtoken
 
 # Editor directories and files
 .vscode/*

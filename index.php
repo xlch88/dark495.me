@@ -7,7 +7,7 @@ if(
 	$githubRepos = [
 		'data'  => json_decode(file_get_contents('https://api.github.com/users/xlch88/repos', false, stream_context_create([
 			'http'  => [
-				'header' => "User-Agent: Mozilla/5.0 (CNMB)\r\n"
+				'header' => "User-Agent: Mozilla/5.0 (CNMB)\r\nAuthorization: token " . trim(file_get_contents('.ghtoken')) . "\r\n"
 			]
 		])), true),
 		'time'  => time()
